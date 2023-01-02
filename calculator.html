@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Chương trình giải toán </h1>
+    <label>a:</label>
+    <input type="number" placeholder="Mời nhập giá trị" id="a">
+    <br><br>
+    <label>b:</label>
+    <input type="number" placeholder="Mời nhập giá trị" id="b">
+    <br><br>
+    <button onclick="tinh(1)">Cộng</button>
+    <button onclick="tinh(2)">Trừ</button>
+    <button onclick="tinh(3)">Nhân</button>
+    <button onclick="tinh(4)">Chia</button>
+    <h1 id="result">Kết quả</h1> <br>
+
+    <script>
+        function tinh(n){
+            var so1 = Number(document.getElementById("a").value);
+            var so2 = Number(document.getElementById("b").value);
+            if(n==1)document.getElementById("result").innerHTML = "Kết quả"+": "+(so1 + so2);
+            if(n==2)document.getElementById("result").innerHTML = "Kết quả"+": "+(so1 - so2);
+            if(n==3)document.getElementById("result").innerHTML = "Kết quả"+": "+(so1 * so2);
+            if(n==4)document.getElementById("result").innerHTML = "Kết quả"+": "+(so1 / so2);
+
+        }
+    </script>
+</body>
+</html>

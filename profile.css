@@ -3,7 +3,7 @@ body{
     background: linear-gradient(45deg,#a0bef8, #b5f0f0,#b5f0f0,#a0bef8);
     color: #333;
     background-size: 400% 400%;
-    /* animation: gradient 3s ease infinite alternate; */
+    animation: gradient 3s ease infinite alternate;
 }
 
 /* background gradient animation  */

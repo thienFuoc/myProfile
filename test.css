@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 1440px;
+    background: hsl(220, 15%, 55%);
+    font-family: 'Outfit', sans-serif;
+}
