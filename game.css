@@ -13,6 +13,7 @@ body {
     background-position: 100% 0;
   }
 }
+
 .box {
   position: absolute;
   top: 80%;
@@ -140,12 +141,16 @@ input:checked ~ .content label{
     transform: translate(0,0);
   }
 }
-@media screen and (min-height: 890px){
-  .box{
+@media only screen and (max-width: 46.1875em){
+  .content{
     position: absolute;
-    top: 30%;
+    background-color: #fff;
+    width: 85%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100px;
+    bottom: 0;
+    transform: translate(-50%, -50px);
+    height: 80px;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
 }
